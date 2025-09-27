@@ -1,10 +1,10 @@
 ## Phân Loại Rác với EfficientNetB0
-#Bài toán
+# Bài toán
 
 Phân loại rác là một bước quan trọng để xây dựng hệ thống tái chế thông minh và giảm tác động xấu đến môi trường.
 Trong dự án này, chúng tôi phát triển một mô hình học sâu để phân loại hình ảnh rác thành 4 loại bằng cách sử dụng EfficientNetB0 kết hợp với transfer learning.
 
-#Dữ liệu
+# Dữ liệu
 
 Bộ dữ liệu bao gồm hình ảnh rác chia thành 4 lớp:
 
@@ -36,7 +36,7 @@ Các ảnh mẫu cho thấy có sự đa dạng lớn trong cùng một lớp (g
 
 Do đó, áp dụng data augmentation để tăng khả năng khái quát hóa cho mô hình.
 
-#Phương pháp
+# Phương pháp
 1. Tiền xử lý
 
 Chỉnh kích thước toàn bộ ảnh về (224, 224)
@@ -73,7 +73,7 @@ Hàm mất mát (Loss): Categorical Crossentropy
 
 Callbacks: EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
 
-#Kết quả
+# Kết quả
 Độ chính xác Validation: ~ 91–92%
 
 Validation Loss (min): ~ 0.258
