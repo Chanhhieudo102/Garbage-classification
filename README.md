@@ -71,4 +71,3 @@ Trong dự án này, chúng tôi xây dựng mô hình học sâu sử dụng **
 - Ma trận nhầm lẫn  
 
 pred = model.predict(x)
-print("Dự đoán:", classes[np.argmax(pred)])
