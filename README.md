@@ -7,29 +7,23 @@ Trong dự án này, chúng tôi phát triển một mô hình học sâu để 
 
 # Dữ liệu
 
-Bộ dữ liệu bao gồm hình ảnh rác chia thành 4 lớp:
+-Bộ dữ liệu bao gồm hình ảnh rác chia thành 4 lớp:
 
-Rác hữu cơ (Organic)
-
-Nhựa (Plastic)
-
-Kim loại (Metal)
-
-Giấy (Paper)
+- Rác hữu cơ (Organic)
+- Nhựa (Plastic)
+- Kim loại (Metal)
+- Giấy (Paper)
 
 Tỷ lệ chia tập: 70% / 20% / 10% (Train / Validation / Test)
 
 Các kỹ thuật tăng cường dữ liệu (Data Augmentation):
 
-Xoay ngẫu nhiên
+- Xoay ngẫu nhiên
+- Lật ngang/dọc
+- Phóng to/thu nhỏ
+- Dịch chuyển theo chiều rộng/chiều cao
 
-Lật ngang/dọc
-
-Phóng to/thu nhỏ
-
-Dịch chuyển theo chiều rộng/chiều cao
-
-#Phân tích dữ liệu (EDA)
+# Phân tích dữ liệu (EDA)
 
 Phân bố các lớp không hoàn toàn cân bằng → một số lớp (ví dụ: Kim loại) có ít mẫu hơn.
 
@@ -52,15 +46,11 @@ Mô hình nền: EfficientNetB0 (huấn luyện trước trên ImageNet)
 
 Các lớp tùy chỉnh (custom head):
 
-GlobalAveragePooling2D
-
-Dropout(0.4)
-
-Dense(128, activation='relu')
-
-Dropout(0.3)
-
-Dense(4, activation='softmax')
+- GlobalAveragePooling2D
+- Dropout(0.4)
+- Dense(128, activation='relu')
+- Dropout(0.3)
+- Dense(4, activation='softmax')
 
 3. Chiến lược huấn luyện
 
