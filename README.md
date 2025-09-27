@@ -1,4 +1,5 @@
-## Phân Loại Rác với EfficientNetB0
+<h1 align="center">🗑️ Phân Loại Rác với EfficientNetB0</h1>
+
 # Bài toán
 
 Phân loại rác là một bước quan trọng để xây dựng hệ thống tái chế thông minh và giảm tác động xấu đến môi trường.
